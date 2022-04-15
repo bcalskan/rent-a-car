@@ -11,10 +11,10 @@ public class ArabaVeMüsteriBilgisi {
     static int kiralanacakGünSayisi;
 
 
+
+
     public static void aracTalepEt() {
         // aracTalep(){} ---> Kadir + Berk
-
-
     }
 
 
@@ -22,7 +22,6 @@ public class ArabaVeMüsteriBilgisi {
 
     public static void getAraba(String marka, String model, String yakitTürü,String vites, Integer günlükKiralamaÜcreti){
         // getAraba(){} ---> Kadir + Berk
-
     }
 
 
@@ -30,27 +29,27 @@ public class ArabaVeMüsteriBilgisi {
 
     public static void arabaÖzellikleri() {
         // arabalar(){}  ---> Meryem + Fikriye
-
-
     }
+
+
 
 
     public static void islemeDevamEtmeDöngüsü() {
         // islemeDevamDongusu(){} ---> Yusuf
-
     }
+
+
 
 
     public static void ödemeBilgileri() {
         // ödemeBilgileri(){}; ---> Yusuf
-
-
     }
+
+
 
 
     public static void müsteriBilgisi() {
         // müsteriBilgisi(){} ---> Yusuf
-
     }
 
 
