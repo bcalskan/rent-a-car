@@ -11,8 +11,6 @@ public class ArabaVeMüsteriBilgisi {
     static int kiralanacakGünSayisi;
 
 
-
-
     public static void aracTalepEt() {
         // aracTalep(){} ---> Kadir + Berk
     }

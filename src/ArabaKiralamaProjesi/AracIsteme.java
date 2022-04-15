@@ -19,10 +19,6 @@ public class AracIsteme {
     public AracIsteme(){
     }
 
-
-
-
-
     public AracIsteme(String alinacakSehir, String alinacakGün, double alisSaati, String teslimGünü, double teslimSaati) {
         this.alinacakSehir = alinacakSehir;
         this.alinacakGün = alinacakGün;
@@ -30,11 +26,6 @@ public class AracIsteme {
         this.teslimGünü = teslimGünü;
         this.teslimSaati = teslimSaati;
     }
-
-
-
-
-
     public AracIsteme(String marka, String model, String yakitTürü, String vites, double günlükKiralamaÜcreti) {
         this.marka = marka;
         this.model = model;
@@ -43,10 +34,6 @@ public class AracIsteme {
         this.günlükKiralamaÜcreti = günlükKiralamaÜcreti;
 
     }
-
-
-
-
 
     @Override
     public String toString() {
@@ -59,20 +46,8 @@ public class AracIsteme {
                 '}';
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     public String getAlinacakSehir() {
+
         return alinacakSehir;
     }
 
@@ -151,10 +126,5 @@ public class AracIsteme {
     public void setGünlükKiralamaÜcreti(double günlükKiralamaÜcreti) {
         this.günlükKiralamaÜcreti = günlükKiralamaÜcreti;
     }
-
-
-
-
-
 
 }
