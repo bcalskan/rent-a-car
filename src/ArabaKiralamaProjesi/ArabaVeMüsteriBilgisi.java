@@ -20,12 +20,6 @@ public class ArabaVeMüsteriBilgisi {
 
 
 
-    public static void getAraba(String marka, String model, String yakitTürü,String vites, Integer günlükKiralamaÜcreti){
-        // getAraba(){} ---> Kadir + Berk
-    }
-
-
-
 
     public static void arabaÖzellikleri() {
         // arabalar(){}  ---> Meryem + Fikriye
