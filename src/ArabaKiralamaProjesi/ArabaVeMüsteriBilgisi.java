@@ -1,8 +1,7 @@
 
-<<<<<<< HEAD
-=======
+
 package ArabaKiralamaProjesi;
->>>>>>> KYkadir
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -19,11 +18,9 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     }
 
 
-
     public static void getAraba(String marka, String model, String yakitTürü, String vites, Integer günlükKiralamaÜcreti) {
 
     }
-
 
 
     public static void arabaÖzellikleri() {
@@ -68,9 +65,9 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
         //String alinacakSehir, String alinacakGün, double alisSaati, String teslimGünü, double teslimSaati)
-        switch (secim){
+        switch (secim) {
             case 1:
-                getAraba("Volvo","S60","Dizel","otomatik",50);
+                getAraba("Volvo", "S60", "Dizel", "otomatik", 50);
                 //odenecek tutar hesaplanıp sout ile musteriye bildirilecek
                 break;
             case 2:
@@ -129,30 +126,17 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     }
 
 
-
-
-<<<<<<< HEAD
-
-//import java.util.Scanner;
-
-
-=======
->>>>>>> KYkadir
     public static void aracTalep() {
-    System.out.println("Lutfen araci alacaginiz sehri giriniz:");
+        System.out.println("Lutfen araci alacaginiz sehri giriniz:");
         Scanner scan = null;
         String sehir = scan.nextLine();
-    System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
-    String alisGunu = scan.next();
-    System.out.println("Lutfen teslim alacaginiz saati giriniz: (Ornek: 15.00)");
-    double alisSaati = scan.nextDouble();
-    System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
-    String teslimGunu = scan.next();
-    System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
-    double teslimSaati = scan.nextDouble();
-}}
-<<<<<<< HEAD
-//>>>>>>> KYkadir
-=======
-
->>>>>>> KYkadir
+        System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
+        String alisGunu = scan.next();
+        System.out.println("Lutfen teslim alacaginiz saati giriniz: (Ornek: 15.00)");
+        double alisSaati = scan.nextDouble();
+        System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
+        String teslimGunu = scan.next();
+        System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
+        double teslimSaati = scan.nextDouble();
+    }
+}
