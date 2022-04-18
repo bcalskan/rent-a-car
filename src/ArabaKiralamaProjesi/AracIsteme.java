@@ -152,9 +152,4 @@ public class AracIsteme {
         this.günlükKiralamaÜcreti = günlükKiralamaÜcreti;
     }
 
-
-
-
-
-
 }
