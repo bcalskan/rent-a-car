@@ -16,9 +16,11 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     }
 
 
+
     public static void getAraba(String marka, String model, String yakitTürü, String vites, Integer günlükKiralamaÜcreti) {
-        // getAraba(){} ---> Kadir + Berk
+
     }
+
 
 
     public static void arabaÖzellikleri() {
@@ -27,7 +29,7 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
         AracIsteme volvoDizelOtomatik = new AracIsteme("Volvo", "S6O", "Dizel", "Otomatik", 50);
         AracIsteme volvoDizelManuel = new AracIsteme("Volvo", "S6O", "Dizel", "Manuel", 45);
-        AracIsteme volvoBenzinOtomatik = new AracIsteme("Volvo", "S4O", "Benzin", "Otomatik", 65);
+        AracIsteme volvoBenzinOtomatik = new AracIsteme("Volvo", "S60", "Benzin", "Otomatik", 65);
         AracIsteme volvoBenzinManuel = new AracIsteme("Volvo", "S6O", "Benzin", "Manuel", 45);
         AracIsteme mercedesBenzinOtomatik = new AracIsteme("Mercedes", "A180", "Benzin", "Otomatik", 80);
         AracIsteme mercedesBenzinManuel = new AracIsteme("Mercedes", "A180", "Benzin", "Manuel", 70);
@@ -35,8 +37,8 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
         AracIsteme mercedesDizelManuel = new AracIsteme("Mercedes", "Benz", "Dizel", "Manuel", 70);
         AracIsteme teslaXElektrikli = new AracIsteme("Tesla", "X", "Elektrikli", "Manuel", 100);
         AracIsteme teslaSElektrikli = new AracIsteme("Tesla", "S", "Elektrikli", "Manuel", 100);
-        AracIsteme teslaYElektrikli = new AracIsteme("Tesla", "S", "Elektrikli", "Otomatik", 100);
-        AracIsteme teslaCElektrikli = new AracIsteme("Tesla", "S", "Elektrikli", "Otomatik", 100);
+        AracIsteme teslaYElektrikli = new AracIsteme("Tesla", "Y", "Elektrikli", "Otomatik", 100);
+        AracIsteme teslaCElektrikli = new AracIsteme("Tesla", "C", "Elektrikli", "Otomatik", 100);
 
 
         //Yukaridaki arabalari olusturdugumuz arac list'ine ekliyoruz
@@ -63,6 +65,47 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
         //String alinacakSehir, String alinacakGün, double alisSaati, String teslimGünü, double teslimSaati)
+        switch (secim){
+            case 1:
+                getAraba("Volvo","S60","Dizel","otomatik",50);
+                //odenecek tutar hesaplanıp sout ile musteriye bildirilecek
+                break;
+            case 2:
+                getAraba("Volvo", "S6O", "Dizel", "Manuel", 45);
+                break;
+            case 3:
+                getAraba("Volvo", "S60", "Benzin", "Otomatik", 65);
+                break;
+            case 4:
+                getAraba("Volvo", "S6O", "Benzin", "Manuel", 45);
+                break;
+            case 5:
+                getAraba("Mercedes", "A180", "Benzin", "Otomatik", 80);
+                break;
+            case 6:
+                getAraba("Mercedes", "A180", "Benzin", "Manuel", 70);
+                break;
+            case 7:
+                getAraba("Mercedes", "Benz", "Dizel", "Otomatik", 80);
+                break;
+            case 8:
+                getAraba("Mercedes", "Benz", "Dizel", "Manuel", 70);
+                break;
+            case 9:
+                getAraba("Tesla", "X", "Elektrikli", "Manuel", 100);
+                break;
+            case 10:
+                getAraba("Tesla", "S", "Elektrikli", "Manuel", 100);
+                break;
+            case 11:
+                getAraba("Tesla", "Y", "Elektrikli", "Otomatik", 100);
+                break;
+            case 12:
+                getAraba("Tesla", "C", "Elektrikli", "Otomatik", 100);
+                break;
+            default:
+                System.out.println("Talep ettiğiniz arac bizde bulunmamaktadır");
+        }
 
 
     }
