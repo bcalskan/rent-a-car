@@ -17,8 +17,45 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
     public static void aracTalepEt() {
         // aracTalep(){} ---> Kadir + Berk
-    }
+        System.out.println("Lutfen araci alacaginiz sehri giriniz:");
+        Scanner scan = null;
+        String sehir = scan.nextLine();
+        System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
+        String alisGunu = scan.next();
+        System.out.println("Lutfen teslim alacaginiz saati giriniz: (Ornek: 15.00)");
+        double alisSaati = scan.nextDouble();
+        System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
+        String teslimGunu = scan.next();
+        System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
+        double teslimSaati = scan.nextDouble();
 
+        System.out.println("****************************");
+        String aGun = alisGunu.substring(0, 2);
+        int intAGun = Integer.parseInt(aGun);
+        String aAy = alisGunu.substring(3);
+        int intAAy = Integer.parseInt(aAy);
+        System.out.println("Alis tarihi : " + intAGun + "." + intAAy);
+
+        String tGun = alisGunu.substring(0, 2);
+        int intTGun = Integer.parseInt(tGun);
+        String TAy = alisGunu.substring(3);
+        int intTAy = Integer.parseInt(TAy);
+        System.out.println("Teslim tarihi : " + intTGun + "." + intTAy);
+
+        if (intAAy > intTAy) {
+            System.out.println("Araci aldiginiz gün teslim edeceginiz günden sonra olamaz");
+            aracTalepEt();
+        } else if (intAGun > intTGun) {
+            System.out.println("Araci aldiginiz gün teslim edeceginiz günden sonra olamaz");
+            aracTalepEt();
+        } else System.out.println("Hatali giris yaptiniz.");
+
+        kiralanacakGünSayisi = (intTAy - intAAy) * 30 + (intTGun - intAGun);
+        System.out.println("Arac toplam " + kiralanacakGünSayisi + " gün kiralanmistir.");
+        System.out.println("****************************");
+
+
+    }
 
 
     public static void getAraba(String marka, String model, String yakitTürü, String vites, Integer günlükKiralamaÜcreti) {
@@ -26,9 +63,8 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     }
 
 
-
     public static void arabaÖzellikleri() {
-        // arabalar(){}  ---> Meryem + Fikriye
+        //arabalar(){}  ---> Meryem + Fikriye
         //yakit arti gunluk kiralalma ucreti ekleyebiliriz, kilometre basina
 
         AracIsteme volvoDizelOtomatik = new AracIsteme("Volvo", "S6O", "Dizel", "Otomatik", 50);
@@ -69,9 +105,9 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
         //String alinacakSehir, String alinacakGün, double alisSaati, String teslimGünü, double teslimSaati)
-        switch (secim){
+        switch (secim) {
             case 1:
-                getAraba("Volvo","S60","Dizel","otomatik",50);
+                getAraba("Volvo", "S60", "Dizel", "otomatik", 50);
                 //odenecek tutar hesaplanıp sout ile musteriye bildirilecek
                 break;
             case 2:
@@ -116,12 +152,33 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
     public static void islemeDevamEtmeDöngüsü() {
-        // islemeDevamDongusu(){} ---> Yusuf
+
+        System.out.println("Isleme devam etmek icin E´ye \nIslemi sonlandirmak icin H´ye basiniz.");
+        String devamMi = scan.nextLine();
+        if (devamMi.equalsIgnoreCase("E")) {
+            müsteriBilgisi();
+        } else if (devamMi.equalsIgnoreCase("H")) {
+            arabaÖzellikleri();
+        } else {
+            System.out.println("Hatali giris yaptiniz.");
+            islemeDevamEtmeDöngüsü();
+        }
     }
 
 
-    public static void ödemeBilgileri() {
-        // ödemeBilgileri(){}; ---> Yusuf
+    public static void ödemeBilgileri() throws InterruptedException {
+
+        System.out.println("Kart numaranizi giriniz.");
+        String kartNumarasi = scan.nextLine();
+        int kartNumarasiUzunluk = 12;
+        if (kartNumarasiUzunluk==12){
+            System.out.println("Gecerli bir kart numarasi girildi.");
+        }else {
+            System.out.println("Gecersiz bir kart numarasi girdiniz.\nTekrar deneyiniz.");
+            Thread.sleep(3);
+            ödemeBilgileri();
+        }
+        System.out.println("Ödemeniz basarili ile gerceklestirildi. \nBizi tercih ettiginiz icin tesekkür ederiz.");
     }
 
 
@@ -147,21 +204,4 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     }
 
 
-
-//import java.util.Scanner;
-
-
-
-    public static void aracTalep() {
-    System.out.println("Lutfen araci alacaginiz sehri giriniz:");
-        Scanner scan = null;
-        String sehir = scan.nextLine();
-    System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
-    String alisGunu = scan.next();
-    System.out.println("Lutfen teslim alacaginiz saati giriniz: (Ornek: 15.00)");
-    double alisSaati = scan.nextDouble();
-    System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
-    String teslimGunu = scan.next();
-    System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
-    double teslimSaati = scan.nextDouble();
-}}
+}
