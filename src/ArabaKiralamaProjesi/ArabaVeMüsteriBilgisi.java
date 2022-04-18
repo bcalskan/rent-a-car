@@ -152,12 +152,33 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
     public static void islemeDevamEtmeDöngüsü() {
-        // islemeDevamDongusu(){} ---> Yusuf
+
+        System.out.println("Isleme devam etmek icin E´ye \nIslemi sonlandirmak icin H´ye basiniz.");
+        String devamMi = scan.nextLine();
+        if (devamMi.equalsIgnoreCase("E")) {
+            müsteriBilgisi();
+        } else if (devamMi.equalsIgnoreCase("H")) {
+            arabaÖzellikleri();
+        } else {
+            System.out.println("Hatali giris yaptiniz.");
+            islemeDevamEtmeDöngüsü();
+        }
     }
 
 
-    public static void ödemeBilgileri() {
-        // ödemeBilgileri(){}; ---> Yusuf
+    public static void ödemeBilgileri() throws InterruptedException {
+
+        System.out.println("Kart numaranizi giriniz.");
+        String kartNumarasi = scan.nextLine();
+        int kartNumarasiUzunluk = 12;
+        if (kartNumarasiUzunluk==12){
+            System.out.println("Gecerli bir kart numarasi girildi.");
+        }else {
+            System.out.println("Gecersiz bir kart numarasi girdiniz.\nTekrar deneyiniz.");
+            Thread.sleep(3);
+            ödemeBilgileri();
+        }
+        System.out.println("Ödemeniz basarili ile gerceklestirildi. \nBizi tercih ettiginiz icin tesekkür ederiz.");
     }
 
 
