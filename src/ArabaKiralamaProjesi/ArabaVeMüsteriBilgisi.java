@@ -27,6 +27,7 @@ public class ArabaVeMüsteriBilgisi {
 
     public static void arabaÖzellikleri() {
         // arabalar(){}  ---> Meryem + Fikriye
+
     }
 
 
