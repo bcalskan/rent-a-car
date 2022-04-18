@@ -1,5 +1,8 @@
-package ArabaKiralamaProjesi;
 
+<<<<<<< HEAD
+=======
+package ArabaKiralamaProjesi;
+>>>>>>> KYkadir
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -128,10 +131,13 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
 
+<<<<<<< HEAD
 
 //import java.util.Scanner;
 
 
+=======
+>>>>>>> KYkadir
     public static void aracTalep() {
     System.out.println("Lutfen araci alacaginiz sehri giriniz:");
         Scanner scan = null;
@@ -145,4 +151,8 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
     System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
     double teslimSaati = scan.nextDouble();
 }}
+<<<<<<< HEAD
 //>>>>>>> KYkadir
+=======
+
+>>>>>>> KYkadir
