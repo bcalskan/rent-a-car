@@ -3,8 +3,6 @@
 =======
 package ArabaKiralamaProjesi;
 >>>>>>> KYkadir
-import ArabaKiralamaProjesi.AracIsteme;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
