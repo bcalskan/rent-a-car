@@ -126,7 +126,24 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
 
 
     public static void müsteriBilgisi() {
-        // müsteriBilgisi(){} ---> Yusuf
+              // müsteriBilgisi(){} ---> Yusuf
+        System.out.println("************************************");
+        System.out.println("Lutfen adinizi ve soyadinizi giriniz: ");
+        String adSoyad= scan.nextLine();
+        scan.next();
+        System.out.println("Lutfen id'nizi giriniz: ");
+        String id = scan.next();
+        scan.next();
+        System.out.println("Lutfen telefon numaranizi giriniz: ");
+        String tlf = scan.nextLine();
+        scan.next();
+        System.out.println("Lutfen yasinizi giriniz: ");
+        int yas = scan.nextInt();
+
+        System.out.println("************************************");
+
+        System.out.println("Ad Soyad: "+adSoyad+"\nid: "+id+"\n Telefon: "+tlf+"\nYas: "+yas);
+
     }
 
 
