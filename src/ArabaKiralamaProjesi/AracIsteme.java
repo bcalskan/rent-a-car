@@ -1,6 +1,7 @@
 package ArabaKiralamaProjesi;
 
 public class AracIsteme {
+    //pojo class
 
     //Kiralama bilgileri
     private String alinacakSehir;
