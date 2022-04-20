@@ -109,40 +109,76 @@ public class ArabaVeMüsteriBilgisi extends AracIsteme {
         switch (secim) {
             case 1:
                 getAraba("Volvo", "S60", "Dizel", "otomatik", 50);
+                int odenecekMiktar1=kiralanacakGünSayisi*50;
+                System.out.println("odenecekMiktar = " + odenecekMiktar1);
+                islemeDevamEtmeDöngüsü();
                 //odenecek tutar hesaplanıp sout ile musteriye bildirilecek
                 break;
             case 2:
                 getAraba("Volvo", "S6O", "Dizel", "Manuel", 45);
+                int odenecekMiktar2=kiralanacakGünSayisi*45;
+                System.out.println("odenecekMiktar = " + odenecekMiktar2);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 3:
                 getAraba("Volvo", "S60", "Benzin", "Otomatik", 65);
+                int odenecekMiktar3=kiralanacakGünSayisi*65;
+                System.out.println("odenecekMiktar = " + odenecekMiktar3);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 4:
                 getAraba("Volvo", "S6O", "Benzin", "Manuel", 45);
+                int odenecekMiktar4=kiralanacakGünSayisi*45;
+                System.out.println("odenecekMiktar = " + odenecekMiktar4);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 5:
                 getAraba("Mercedes", "A180", "Benzin", "Otomatik", 80);
+                int odenecekMiktar5=kiralanacakGünSayisi*80;
+                System.out.println("odenecekMiktar = " + odenecekMiktar5);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 6:
                 getAraba("Mercedes", "A180", "Benzin", "Manuel", 70);
+                int odenecekMiktar6=kiralanacakGünSayisi*70;
+                System.out.println("odenecekMiktar = " + odenecekMiktar6);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 7:
                 getAraba("Mercedes", "Benz", "Dizel", "Otomatik", 80);
+                int odenecekMiktar7=kiralanacakGünSayisi*80;
+                System.out.println("odenecekMiktar = " + odenecekMiktar7);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 8:
                 getAraba("Mercedes", "Benz", "Dizel", "Manuel", 70);
+                int odenecekMiktar8=kiralanacakGünSayisi*70;
+                System.out.println("odenecekMiktar = " + odenecekMiktar8);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 9:
                 getAraba("Tesla", "X", "Elektrikli", "Manuel", 100);
+                int odenecekMiktar9=kiralanacakGünSayisi*100;
+                System.out.println("odenecekMiktar = " + odenecekMiktar9);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 10:
                 getAraba("Tesla", "S", "Elektrikli", "Manuel", 100);
+                int odenecekMiktar10=kiralanacakGünSayisi*100;
+                System.out.println("odenecekMiktar = " + odenecekMiktar10);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 11:
                 getAraba("Tesla", "Y", "Elektrikli", "Otomatik", 100);
+                int odenecekMiktar11=kiralanacakGünSayisi*100;
+                System.out.println("odenecekMiktar = " + odenecekMiktar11);
+                islemeDevamEtmeDöngüsü();
                 break;
             case 12:
                 getAraba("Tesla", "C", "Elektrikli", "Otomatik", 100);
+                int odenecekMiktar12=kiralanacakGünSayisi*100;
+                System.out.println("odenecekMiktar = " + odenecekMiktar12);
+                islemeDevamEtmeDöngüsü();
                 break;
             default:
                 System.out.println("Talep ettiğiniz arac bizde bulunmamaktadır");
